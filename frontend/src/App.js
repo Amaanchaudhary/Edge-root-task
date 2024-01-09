@@ -7,6 +7,8 @@ import AddProduct from './Components/AddProduct';
 import PageNotFound from './Components/PageNotFound';
 import Navbar from './Components/Navbar';
 import YourProducts from './Components/YourProducts';
+import UpdateProduct from './Components/UpdateProduct';
+import SingleProductNew from './Components/SingleProductNew';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route exact path='/register' element={<Register />} />
         <Route exact path='/addproduct' element={<AddProduct/>}/>
         <Route exact path='/yourproducts' element={<YourProducts/>}/>
+        <Route exact path='/updateproduct/:id' element={<UpdateProduct />}/>
+        <Route exact path='/single-product/:id' element={<SingleProductNew />}/>
         <Route exact path='/navbar' element={<Navbar/>}/>
       </Routes>
     </div>

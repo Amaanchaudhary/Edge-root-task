@@ -1,5 +1,6 @@
 import { createContext, useEffect, useReducer } from "react";
 import api from "../helpers/axios.config";
+import toast from "react-hot-toast";
 
 export const AuthContext = createContext();
 
@@ -9,7 +10,7 @@ const reducer = (state, action) => {
             return { ...state, user: action.payload }
         case "LOGOUT":
             localStorage.removeItem("My-token")
-            alert("Logout Succesfull.")
+            toast.success("Logout Succesfull.")
             return { ...state, user: null }
         default:
             return state

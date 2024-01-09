@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='navbarRight'>
                 {state?.user?.id ?
                     <>
-                        <p>{state?.user?.name}</p>
+                        <div>{state?.user?.name}</div>
                         <div onClick={Logout}>LOGOUT</div>
                     </>
                     :

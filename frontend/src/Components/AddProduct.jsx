@@ -15,7 +15,7 @@ const AddProduct = () => {
 
     const [ProductData, SetProductData] = useState([{ name: "", price: "", image: "", category: "" }])
 
-    // console.log(ProductData , "Product Data");
+    console.log(ProductData , "Product Data");
 
     const handleChange = (event) => {
         // console.log(event.target.value)
@@ -41,7 +41,7 @@ const AddProduct = () => {
                 }
             } catch (error) {
                 console.log(error, "Error Found")
-                toast.error(error.response.data.message)
+                toast.error(error?.response?.data.message)
             }
         } else {
             toast.error("All Fields are Mandatory")

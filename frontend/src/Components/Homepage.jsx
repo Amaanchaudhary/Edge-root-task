@@ -12,22 +12,21 @@ const Homepage = () => {
 
     useEffect(() => {
         // toast.success("Page rendered on Browser")
-
         async function getProduct() {
             try {
                 const { data } = await api.get('/product/get-all-product');
 
-                // console.log(data, "data here");
                 if(data.success){
                     setProducts(data.products)
                 }
 
             } catch (error) {
-                toast.error(error.data.message)
+                toast.error(error?.data?.message)
             }
         }
         getProduct()
     }, [])
+
     return (
         <div>
             {Products?.length ?
@@ -37,13 +36,11 @@ const Homepage = () => {
                         <h3>Name : {pro.name}</h3>
                         <h4>Price : {pro.price} $</h4>
                         <p>Category : {pro.category}</p>
-                        <button className="button" onClick={() => toast.success("Product added to cart")}>Add to cart</button>
                     </div>
                 ))}
                 </div>  
                 :
                 <div>Loading...</div>}
-
         </div>
     )
 }
