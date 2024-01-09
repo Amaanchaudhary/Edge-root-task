@@ -1,0 +1,16 @@
+.yourproducts-Screen{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.yourproducts-product{
+    height: 400px;
+    width: 28%;
+    /* border: 1px solid black; */
+}
+.yourproducts-product > img{
+    height: 100%;
+    width: 100%;
+}

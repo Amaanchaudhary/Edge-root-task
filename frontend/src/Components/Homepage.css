@@ -1,0 +1,23 @@
+#main {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.body {
+    border: 1px solid black;
+    width: 23%;
+    height: 550px;
+    margin-bottom: 20px;
+}
+
+.images {
+    width: 80%;
+    height: 50%;
+}
+
+.button{
+    position: relative;
+    bottom: 0%;
+}

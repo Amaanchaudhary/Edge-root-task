@@ -1,0 +1,54 @@
+.navbarScreen{
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    background-color: bisque;
+    font-weight: 500;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.navbarLeft{
+    margin-inline-start: 5%;
+    width: 10%;
+    height: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+.navbarMid{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.semiNavbarMid1{
+    padding-right: 20px;
+}
+.semiNavbarMid2{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: fit-content;
+}
+.semiNavbarMid2 > div{
+    padding: 0 30px;
+}
+.navbarRight{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-inline-end: 5%;
+    cursor: pointer;
+}
+.navbarRight > div{
+    padding: 0 20px;
+}
